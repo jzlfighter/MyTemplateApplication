@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <!-- 默认背景色 -->
+    <color name="backgroundColor">#f5f5f5</color>
+    <!-- 主色 -->
+    <color name="app_color_principal">#419bfc</color>
+    <!-- 辅助色 -->
+    <color name="app_color_secondary">#48affb</color>
+    <color name="app_color_thirddary">#4abe89</color>
+    <!-- 首页借款颜色 -->
+    <color name="home_tag_color">#ff8003</color>
+    <!-- 广告页颜色 -->
+    <color name="ad_color_yellow">#fcd426</color>
+
+    <color name="app_color_green">#4abe89</color>
+    <!-- 边框、button-disable -->
+    <color name="grey_bg">#DADADA</color>
+    <!-- 红色按钮颜色 -->
+    <color name="red_btn">#419bfc</color>
+
+    <!-- 控件背景色 -->
+    <color name="widget_backgroundColor">#ffffff</color>
+
+    <!-- 资产红色 -->
+    <color name="assets_red">#FF7F7F</color>
+
+    <!-- 进度条 -->
+    <color name="bar_backgroundColor">#F2F4F8</color>
+    <color name="bar_progressColor">#419bfc</color>
+
+    <color name="app_title_back">#333333</color>
+
+    <color name="text_alpha_white">#FDB7A8</color>
+
+    <!-- 首页 tab 文字颜色 -->
+    <color name="tab_bg">#ffffff</color>
+    <color name="tab_text_normal">#666666</color>
+    <color name="tab_text_select">#2683CF</color>
+
+    <color name="divider_line">#DDDDDD</color>
+
+    <color name="button_orange_bg">#FC9F1A</color>
+
+    <!-- 地图颜色 -->
+    <color name="amap_transparent_theme_color">#664ab6fa</color>
+
+    <!-- 按钮颜色值 -->
+    <color name="btn_normal">#419bfc</color>
+    <color name="btn_press">#419bfc</color>
+    <color name="btn_disable">#cccccc</color>
+
+    <!--分割线-->
+    <color name="divide_line">#dddddd</color>
+</resources>
