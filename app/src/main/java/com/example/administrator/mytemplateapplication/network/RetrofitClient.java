@@ -15,13 +15,6 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/5 10:30
- * <p/>
- * Description: 网络请求client
- */
 public class RetrofitClient {
     // 网络请求超时时间值(s)
     private static final int DEFAULT_TIMEOUT = 30;
@@ -93,7 +86,7 @@ public class RetrofitClient {
     /**
      * @return 指定service实例
      */
-    public static <T> T getService(Class<T> clazz) {
+    public static <T> T create(Class<T> clazz) {
         if (getServiceMap().containsKey(clazz.getSimpleName())) {
             return (T) getServiceMap().get(clazz.getSimpleName());
         }

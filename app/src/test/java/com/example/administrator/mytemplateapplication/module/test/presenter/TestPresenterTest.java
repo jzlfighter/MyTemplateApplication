@@ -7,10 +7,6 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.when;
-
 /**
  * Created by Administrator on 2017/12/22.
  */
@@ -22,14 +18,10 @@ public class TestPresenterTest {
 
     @Before
     public void setupTasksPresenter() {
-        MockitoAnnotations.initMocks(this);
-        testPresenter = new TestPresenter(mView);
-//        when(mView.isActive()).thenReturn(true);
     }
 
     @Test
     public void loadData() throws Exception {
-        testPresenter.test();
     }
 
 }

@@ -9,7 +9,6 @@ import java.io.Serializable;
  * <p/>
  * Description:
  */
-@SuppressWarnings("unused")
 public class Observable<T> implements Serializable {
     private T mValue;
 

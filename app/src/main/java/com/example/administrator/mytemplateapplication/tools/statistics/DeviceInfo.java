@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 
-import com.example.administrator.mytemplateapplication.module.OauthTokenMo;
+import com.example.administrator.mytemplateapplication.module.user.model.entity.User;
 import com.example.administrator.mytemplateapplication.tools.SharedInfo;
 
 
@@ -58,7 +58,7 @@ public class DeviceInfo {
         this.app_id = context.getPackageName();
         this.app_channel_id = DeviceInfoUtils.getAppMetaData(context, "APP_CHANNEL");
         this.app_version = DeviceInfoUtils.getVersionName(context) + " - " + DeviceInfoUtils.getVersionCode(context);
-        OauthTokenMo bean = SharedInfo.getInstance().getEntity(OauthTokenMo.class);
+        User bean = SharedInfo.getInstance().getEntity(User.class);
         if (bean != null) {
             this.app_user_id = bean.getUserId();
             this.app_user_name = bean.getUsername();

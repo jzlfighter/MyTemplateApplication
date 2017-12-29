@@ -1,7 +1,6 @@
 package com.example.administrator.mytemplateapplication.base;
 
-public interface BaseView<T> {
+public interface BaseView<T extends BasePresenter> {
 
-    void setPresenter(T presenter);
 
 }

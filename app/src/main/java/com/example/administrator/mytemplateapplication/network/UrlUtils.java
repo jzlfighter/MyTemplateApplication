@@ -4,7 +4,7 @@ import android.text.TextUtils;
 
 
 import com.example.administrator.mytemplateapplication.Constant;
-import com.example.administrator.mytemplateapplication.module.OauthTokenMo;
+import com.example.administrator.mytemplateapplication.module.user.model.entity.User;
 import com.example.administrator.mytemplateapplication.tools.SharedInfo;
 import com.example.administrator.mytemplateapplication.tools.encryption.MDUtil;
 import com.example.administrator.mytemplateapplication.tools.statistics.DeviceInfoUtils;
@@ -183,7 +183,7 @@ public class UrlUtils {
      * 获取oauthToken
      */
     public String getToken() {
-        OauthTokenMo mo = SharedInfo.getInstance().getEntity(OauthTokenMo.class);
+        User mo = SharedInfo.getInstance().getEntity(User.class);
         if (mo != null) {
             return mo.getToken();
         }
@@ -194,7 +194,7 @@ public class UrlUtils {
      * 获取userId
      */
     public String getUserId() {
-        OauthTokenMo mo = SharedInfo.getInstance().getEntity(OauthTokenMo.class);
+        User mo = SharedInfo.getInstance().getEntity(User.class);
         if (mo != null) {
             return mo.getUserId();
         }

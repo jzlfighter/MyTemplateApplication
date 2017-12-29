@@ -8,17 +8,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.view.WindowManager;
 
-import com.example.administrator.mytemplateapplication.Constant;
-import com.example.administrator.mytemplateapplication.R;
-import com.example.administrator.mytemplateapplication.module.OauthTokenMo;
 import com.example.administrator.mytemplateapplication.network.entity.HttpResult;
-import com.example.administrator.mytemplateapplication.tools.SharedInfo;
-import com.example.administrator.mytemplateapplication.tools.utils.ActivityManage;
 import com.example.administrator.mytemplateapplication.tools.utils.ContextHolder;
 import com.example.administrator.mytemplateapplication.tools.utils.ToastUtil;
-
-import retrofit2.Call;
-import retrofit2.Response;
 
 
 /**
@@ -33,12 +25,12 @@ public final class ExceptionHandling {
     public static void operate(final HttpResult result) {
         switch (result.getCode()) {
             case AppResultCode.TOKEN_TIMEOUT:
-//                OauthTokenMo tokenMo = SharedInfo.getInstance().getEntity(OauthTokenMo.class);
+//                User tokenMo = SharedInfo.getInstance().getEntity(User.class);
 //                if (null != tokenMo) {
-//                    Call<HttpResult<OauthTokenMo>> call = RetrofitClient.getService(UserService.class).refreshToken(tokenMo.getRefreshToken());
-//                    call.enqueue(new RequestCallBack<HttpResult<OauthTokenMo>>() {
+//                    Call<HttpResult<User>> call = RetrofitClient.create(UserService.class).refreshToken(tokenMo.getRefreshToken());
+//                    call.enqueue(new RequestCallBack<HttpResult<User>>() {
 //                        @Override
-//                        public void onSuccess(Call<HttpResult<OauthTokenMo>> call, Response<HttpResult<OauthTokenMo>> response) {
+//                        public void onSuccess(Call<HttpResult<User>> call, Response<HttpResult<User>> response) {
 //                            SharedInfo.getInstance().saveEntity(response.body().getData());
 //                        }
 //                    });

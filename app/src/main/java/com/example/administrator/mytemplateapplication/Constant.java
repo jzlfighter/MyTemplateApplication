@@ -77,6 +77,8 @@ public class Constant {
     public static final String USER_ID           = "userId";
 
 
+    public static final String URL_TEST="http://api.jiexinka.com/api/";
+
     public static final String URI_AUTHORITY_BETA = "http://api.jiexinka.com/";//预发服务器
     //public static final String URI_AUTHORITY_RELEASE = "http://192.168.21.94:8080/";
     /** 正式服务器地址 */

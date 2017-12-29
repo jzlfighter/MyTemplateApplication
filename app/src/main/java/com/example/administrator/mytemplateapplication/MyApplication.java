@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 
+import com.example.administrator.mytemplateapplication.dagger2.DaggerAppComponent;
 import com.example.administrator.mytemplateapplication.tools.SharedInfo;
 import com.example.administrator.mytemplateapplication.tools.utils.ActivityManage;
 
@@ -16,6 +17,8 @@ import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Set;
 
+import dagger.android.AndroidInjector;
+import dagger.android.DaggerApplication;
 import okhttp3.OkHttpClient;
 
 /**
@@ -25,7 +28,7 @@ import okhttp3.OkHttpClient;
  * <p>
  * Description:
  */
-public class MyApplication extends Application {
+public class MyApplication extends DaggerApplication {
     /**
      * 当前活动的Activity数量
      */
@@ -67,6 +70,11 @@ public class MyApplication extends Application {
             }
         });
         SharedInfo.init(Constant.SP_NAME);
+    }
+
+    @Override
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        return DaggerAppComponent.builder().application(this).build();
     }
 
 }

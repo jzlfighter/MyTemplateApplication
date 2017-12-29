@@ -1,34 +1,26 @@
 package com.example.administrator.mytemplateapplication.base;
 
-import android.support.v7.app.AppCompatActivity;
+import javax.inject.Inject;
 
-import com.example.administrator.mytemplateapplication.tools.log.Logger;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.Scheduler;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import dagger.android.support.DaggerAppCompatActivity;
 
 /**
  * Created by Administrator on 2017/12/21.
  */
 
-public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements BaseView<T> {
+public abstract class BaseActivity<T extends BasePresenter> extends DaggerAppCompatActivity implements BaseView<T> {
+    @Inject
     protected T mPresenter;
 
     @Override
-    public void setPresenter(T presenter) {
-        mPresenter = presenter;
+    protected void onResume() {
+        super.onResume();
+        mPresenter.takeView(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPresenter.onDestory();
+        mPresenter.dropView();
     }
 }

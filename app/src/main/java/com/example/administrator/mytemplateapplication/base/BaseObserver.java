@@ -1,7 +1,6 @@
 package com.example.administrator.mytemplateapplication.base;
 
 
-
 import com.example.administrator.mytemplateapplication.network.NetworkUtil;
 import com.example.administrator.mytemplateapplication.network.exception.ApiException;
 import com.example.administrator.mytemplateapplication.tools.log.Logger;
@@ -11,10 +10,12 @@ import java.io.IOException;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+
 import com.example.administrator.mytemplateapplication.network.ExceptionHandling;
 
 /**
- * Created by Administrator on 2017/12/21.
+ * Created by jzl on 2017/12/21.
+ * 观察者基类，用来对网络请求进行统一的处理
  */
 
 public abstract class BaseObserver<T> implements Observer<T> {

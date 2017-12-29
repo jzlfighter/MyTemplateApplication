@@ -12,17 +12,10 @@ import java.util.TreeMap;
 
 import okhttp3.Interceptor;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/5 17:59
- * <p/>
- * Description: 拦截器 - 用于添加签名参数
- */
-class BasicParamsInject {
+public class BasicParamsInject {
     private BasicParamsInterceptor interceptor;
 
-    BasicParamsInject() {
+    public BasicParamsInject() {
         // 设置静态参数
         interceptor = new BasicParamsInterceptor.Builder()
                 //.addBodyParam(Constant.APP_KEY, BaseParams.APP_KEY)
@@ -51,7 +44,7 @@ class BasicParamsInject {
         });
     }
 
-    Interceptor getInterceptor() {
+    public Interceptor getInterceptor() {
         return interceptor;
     }
 }

@@ -3,13 +3,6 @@ package com.example.administrator.mytemplateapplication.tools.utils;
 import android.app.Application;
 import android.content.Context;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/11/11 16:46
- * <p/>
- * Description: application_context 工具类
- */
 public class ContextHolder {
     private static Context APPLICATION_CONTEXT;
 

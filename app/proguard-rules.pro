@@ -182,16 +182,10 @@
 
 # 实体类 混淆keep规则
 -keep class com.google.common.base.**{ *; }
--keep class com.company.loan.module.home.dataModel.**{ *; }
--keep class com.company.loan.module.repay.dataModel.**{ *; }
--keep class com.company.loan.module.mine.dataModel.**{ *; }
--keep class com.company.loan.module.user.dataModel.**{ *; }
--keep class com.company.loan.module.home.viewModel.**{ *; }
--keep class com.company.loan.module.repay.viewModel.**{ *; }
--keep class com.company.loan.module.mine.viewModel.**{ *; }
--keep class com.company.loan.module.user.viewModel.**{ *; }
--keep class com.company.loan.views.spinnerwheel.**{ *; }
--keep class com.erongdu.wireless.network.entity.**{ *; }
+-keep class com.example.administrator.mytemplateapplication.module.test.model.**{ *; }
+
+# dagger2
+-dontwarn com.google.errorprone.annotations.**
 
 # gilde 混淆keep规则
 -keep public class * implements com.bumptech.glide.module.GlideModule

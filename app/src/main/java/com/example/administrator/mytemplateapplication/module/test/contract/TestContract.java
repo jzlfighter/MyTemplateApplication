@@ -12,7 +12,7 @@ public interface TestContract {
         void showText(String text);
     }
 
-    interface Presenter extends BasePresenter{
+    interface Presenter extends BasePresenter<View>{
         void loadData();
     }
 }
