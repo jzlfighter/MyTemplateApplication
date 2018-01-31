@@ -19,15 +19,27 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import com.bumptech.glide.Glide;
 import com.example.administrator.mytemplateapplication.R;
 import com.example.administrator.mytemplateapplication.base.BaseActivity;
+import com.example.administrator.mytemplateapplication.module.test.model.SplashRec;
 import com.example.administrator.mytemplateapplication.module.user.contract.LoginContract;
 import com.example.administrator.mytemplateapplication.module.user.model.entity.LoginSub;
 import com.example.administrator.mytemplateapplication.module.user.model.entity.User;
+import com.example.administrator.mytemplateapplication.network.RequestCallBack;
+import com.example.administrator.mytemplateapplication.network.RetrofitClient;
+import com.example.administrator.mytemplateapplication.network.api.TestService;
+import com.example.administrator.mytemplateapplication.network.entity.HttpResult;
+import com.example.administrator.mytemplateapplication.tools.GlideApp;
+
+import retrofit2.Call;
+import retrofit2.Response;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -87,13 +99,21 @@ public class LoginActivity extends BaseActivity<LoginContract.Presenter> impleme
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
         tvUserInfo = findViewById(R.id.tvUserInfo);
+
+        Call<HttpResult<ArrayList<SplashRec>>> call= RetrofitClient.create(TestService.class).getPositionContent("http://api-camp-simu.hzmayidai.com/app/get-position-content",
+                "myxd","1");
+        call.enqueue(new RequestCallBack<HttpResult<ArrayList<SplashRec>>>() {
+            @Override
+            public void onSuccess(Call<HttpResult<ArrayList<SplashRec>>> call, Response<HttpResult<ArrayList<SplashRec>>> response) {
+                GlideApp.with(getApplicationContext()).load(response.body().getData().get(0).getContent()).into((ImageView) findViewById(R.id.image));
+            }
+        });
     }
 
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
             return;
         }
-
     }
 
     private boolean mayRequestContacts() {

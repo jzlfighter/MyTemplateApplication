@@ -85,7 +85,10 @@
                 android:layout_marginTop="16dp"
                 android:text="DeleteDatabase"
                 android:textStyle="bold" />
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/image"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

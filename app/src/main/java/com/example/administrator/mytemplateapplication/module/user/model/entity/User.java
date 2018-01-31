@@ -2,6 +2,7 @@ package com.example.administrator.mytemplateapplication.module.user.model.entity
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
@@ -77,6 +78,7 @@ public class User {
     }
 
     public User(){}
+    @Ignore
     public User(@NonNull String userId){
         this.userId=userId;
     }
