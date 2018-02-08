@@ -17,14 +17,6 @@ import java.security.Key;
 import static com.example.administrator.mytemplateapplication.tools.encryption.RSAUtil.BCDEncrypt;
 
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/8/10 13:57
- * <p/>
- * Description: 将请求内容，转换成服务器可解析的内容
- * 如果使用RSA加密，则需要在Application中调用 SerializedUtil.init(...)方法
- */
 @SuppressWarnings("unused")
 public class SerializedUtil {
     // RSA 加密密钥

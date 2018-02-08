@@ -16,13 +16,6 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okio.Buffer;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/5/4 10:25
- * <p/>
- * Description: 公共参数拦截器
- */
 @SuppressWarnings("unused")
 public class BasicParamsInterceptor implements Interceptor {
     /**

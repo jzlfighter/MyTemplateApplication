@@ -5,14 +5,6 @@ import java.security.Key;
 import java.security.PrivateKey;
 import java.security.Signature;
 
-/**
- * Author: fwd
- * E-mail: xth@erongdu.com
- * Date: 2017年06月26日11:30:54
- * <p>
- * Description: RSA 工具类
- */
-@SuppressWarnings("unused")
 public class RSAUtil {
     ///////////////////////////////////////////////////////////////////////////
     // RSA + Base64 加解密

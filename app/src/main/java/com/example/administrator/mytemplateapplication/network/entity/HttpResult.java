@@ -4,13 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.security.PrivateKey;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/5 15:23
- * <p/>
- * Description: 网络返回消息，最外层解析实体
- */
 @SuppressWarnings("unused")
 public class HttpResult<T> {
     /**

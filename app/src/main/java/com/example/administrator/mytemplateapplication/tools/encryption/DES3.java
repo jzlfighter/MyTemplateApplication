@@ -8,13 +8,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/7/26 15:11
- * <p/>
- * Description: 3DES加解密工具类
- */
 @SuppressWarnings("unused")
 public class DES3 {
     // 算法名称

@@ -10,10 +10,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Email: hbh@erongdu.com
- * Created by hebihe on 4/18/16.
- */
 @SuppressWarnings("unused")
 public class RefObject {
     private RefObject parent;

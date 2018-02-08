@@ -8,13 +8,6 @@ import com.example.administrator.mytemplateapplication.module.user.model.entity.
 import com.example.administrator.mytemplateapplication.tools.SharedInfo;
 
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/27 17:20
- * <p/>
- * Description: 手机设备信息
- */
 @SuppressWarnings("unused")
 public class DeviceInfo {
     /** 全局唯一标识符（安卓传IMEI，IOS传UDID） */

@@ -1,9 +1,5 @@
 package com.example.administrator.mytemplateapplication.tools.reflect;
 
-/**
- * Email: hbh@erongdu.com
- * Created by hebihe on 4/18/16.
- */
 @SuppressWarnings("unused")
 public class RefException extends Exception {
     public RefException() {

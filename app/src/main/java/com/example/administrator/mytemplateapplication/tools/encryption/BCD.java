@@ -1,12 +1,5 @@
 package com.example.administrator.mytemplateapplication.tools.encryption;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/7 10:24
- * <p/>
- * Description: BCD码 编解码工具类
- */
 @SuppressWarnings("unused")
 public class BCD {
     /**

@@ -56,19 +56,6 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.Cipher;
 
-/**
- * Author: fwd
- * Date:2017年06月24日11:31:10
- * <p/>
- * Description: RSA 工具类。提供加密，解密，生成密钥对等方法，签名方法
- * <p/>
- * 关于加密填充方式：
- * android系统默认的RSA实现是"RSA/None/NoPadding"，而标准JDK默认的RSA实现是"RSA/None/PKCS1Padding"
- * <p/>
- * 关于分段加密：
- * RSA算法规定：待加密的字节数不能超过密钥的长度值除以 8 再减去 11（即：KeySize / 8 - 11）,而加密后得到密文的字节数,正好是密钥的长度值除以 8（即：KeySize / 8）
- */
-@SuppressWarnings("unused")
 public final class RSA {
     // RSA密钥文件路径
     private static final String KEY_PATH = "D:/RSAKey.txt";

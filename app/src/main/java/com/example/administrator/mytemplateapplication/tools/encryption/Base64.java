@@ -2,13 +2,6 @@ package com.example.administrator.mytemplateapplication.tools.encryption;
 
 import java.io.UnsupportedEncodingException;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/7 10:22
- * <p>
- * Description: BASE64 编解码工具类
- */
 @SuppressWarnings("unused")
 public class Base64 {
     private static char[] base64EncodeChars = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',

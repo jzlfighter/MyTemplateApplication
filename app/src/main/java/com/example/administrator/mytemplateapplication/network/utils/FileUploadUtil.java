@@ -10,13 +10,6 @@ import java.util.Map;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/5/23 15:59
- * <p/>
- * Description: 文件上传工具类
- */
 @SuppressWarnings("unused")
 public class FileUploadUtil {
     /**

@@ -31,13 +31,6 @@ import java.io.StringReader;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/6 9:35
- * <p/>
- * Description:  JSON response 解析
- */
 @SuppressWarnings("unused")
 final class RDResponseBodyConverter<T> implements Converter<ResponseBody, T> {
     private final Gson gson;

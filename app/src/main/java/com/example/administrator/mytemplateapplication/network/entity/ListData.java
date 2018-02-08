@@ -2,13 +2,6 @@ package com.example.administrator.mytemplateapplication.network.entity;
 
 import java.util.List;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/5/11 11:26
- * <p/>
- * Description: 反序列化带page的List数据
- */
 @SuppressWarnings("unused")
 public class ListData<T> extends PageMo {
     /** list数据 */

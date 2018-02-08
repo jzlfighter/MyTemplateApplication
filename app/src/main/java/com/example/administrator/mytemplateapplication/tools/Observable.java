@@ -2,13 +2,6 @@ package com.example.administrator.mytemplateapplication.tools;
 
 import java.io.Serializable;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/8/30 15:23
- * <p/>
- * Description:
- */
 public class Observable<T> implements Serializable {
     private T mValue;
 

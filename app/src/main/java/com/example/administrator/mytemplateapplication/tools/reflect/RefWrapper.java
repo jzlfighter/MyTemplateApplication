@@ -2,10 +2,6 @@ package com.example.administrator.mytemplateapplication.tools.reflect;
 
 import java.util.HashMap;
 
-/**
- * Email: hbh@erongdu.com
- * Created by hebihe on 4/18/16.
- */
 @SuppressWarnings("unused")
 public class RefWrapper {
     public final static  int                         CLASS_STRING  = 1;

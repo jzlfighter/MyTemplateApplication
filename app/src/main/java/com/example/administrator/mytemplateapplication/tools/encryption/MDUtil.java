@@ -6,13 +6,6 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/6 15:56
- * <p/>
- * Description: 消息摘要算法工具类
- */
 @SuppressWarnings("unused")
 public class MDUtil {
     public enum TYPE {

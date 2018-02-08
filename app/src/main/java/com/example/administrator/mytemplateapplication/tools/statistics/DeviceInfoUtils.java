@@ -14,13 +14,6 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/27 17:26
- * <p/>
- * Description: 手机设备信息手机工具类
- */
 public class DeviceInfoUtils {
     /**
      * 获得IMEI号

@@ -29,13 +29,6 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Converter;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/4/6 9:35
- * <p/>
- * Description: Object request 解析
- */
 @SuppressWarnings("unused")
 final class RDRequestBodyConverter<T> implements Converter<T, RequestBody> {
     private static final MediaType MEDIA_TYPE   = MediaType.parse("application/x-www-form-urlencoded; charset=UTF-8");

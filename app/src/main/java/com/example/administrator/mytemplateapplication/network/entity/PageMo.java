@@ -2,13 +2,6 @@ package com.example.administrator.mytemplateapplication.network.entity;
 
 import java.io.Serializable;
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/5/11 10:41
- * <p/>
- * Description: 页数信息
- */
 @SuppressWarnings("unused")
 public class PageMo implements Serializable {
     /** 总页数 */

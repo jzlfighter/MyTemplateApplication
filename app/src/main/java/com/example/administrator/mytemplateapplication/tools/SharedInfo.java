@@ -8,14 +8,6 @@ import com.example.administrator.mytemplateapplication.tools.utils.SPUtil;
 import com.example.administrator.mytemplateapplication.tools.utils.SoftHashMap;
 
 
-/**
- * Author: TinhoXu
- * E-mail: xth@erongdu.com
- * Date: 2016/8/17 18:14
- * <p/>
- * Description: 数据持久化
- * 在Application中调用 SharedInfo.init(...)方法
- */
 @SuppressWarnings(value = {"unused", "unchecked"})
 public class SharedInfo {
     private SoftHashMap<String, Object> moMap;
