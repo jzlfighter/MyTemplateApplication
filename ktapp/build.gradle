@@ -82,10 +82,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
 
     //Dagger2
-//    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-//    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
-//    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
-//    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
-//    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
-//    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
 }

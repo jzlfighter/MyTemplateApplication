@@ -4,6 +4,7 @@ import android.app.job.JobInfo
 import android.app.job.JobScheduler
 import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         btStop.setOnClickListener {
             scheduler.cancel(JOBID)
         }
+        btLogin.setOnClickListener{startActivity(Intent(this,LoginActivity::class.java))}
     }
 
     private fun scheduleJob() {

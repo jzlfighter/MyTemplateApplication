@@ -1,1 +1,1 @@
-include ':app', ':ktapp'
+include ':app', ':ktapp', ':wavemaker'
