@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyTemplateApplication.iml" filepath="$PROJECT_DIR$/MyTemplateApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TemplateApp.iml" filepath="$PROJECT_DIR$/TemplateApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ktapp/ktapp.iml" filepath="$PROJECT_DIR$/ktapp/ktapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/sunshine/sunshine.iml" filepath="$PROJECT_DIR$/sunshine/sunshine.iml" />

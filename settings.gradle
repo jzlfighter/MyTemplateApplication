@@ -1,1 +1,1 @@
-include ':app', ':ktapp', ':wavemaker', ':sunshine', ':transporttracker'
+include ':app', ':algorithm'

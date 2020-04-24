@@ -26,10 +26,10 @@ android {
 //            keyPassword rootProject.ext.android.keyPassword
         }
         release {
-            keyAlias 'mytemplate'
-            keyPassword '111111'
-            storeFile file('D:/AndroidStudioProjects/MyTemplateApplication/mytemplate.jks')
-            storePassword '111111'
+//            keyAlias 'mytemplate'
+//            keyPassword '111111'
+//            storeFile file('D:/AndroidStudioProjects/MyTemplateApplication/mytemplate.jks')
+//            storePassword '111111'
         }
     }
     buildTypes {
@@ -51,7 +51,7 @@ android {
         }
         release {
             buildConfigField "boolean", "LOG_DEBUG", "true"
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
             minifyEnabled true
             zipAlignEnabled true
             shrinkResources true
