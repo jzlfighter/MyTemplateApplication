@@ -49,5 +49,9 @@ public class MyQueue {
         queue = newArray;
         start=0;
     }
+
+    public boolean isEmpty(){
+        return start>pointer;
+    }
 //todo 完成这个类
 }
