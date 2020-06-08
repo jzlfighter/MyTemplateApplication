@@ -1,57 +1,84 @@
 package jzl.com.algorithm.week2;
 
+import java.util.Iterator;
+
 /**
  * com.example.administrator.mytemplateapplication.network.utils
  * Created by kingj on 2020/3/27 0027.
  */
-public class MyQueue {
+public class MyQueue<Value> implements Iterable<Value> {
 
-    private int [] queue = new int[1];
+    private Object[] queue = new Object[1];
     private int pointer = -1;
     private int start = 0;
 
-    public void enqueue(int i){
+    public void enqueue(Value i) {
         pointer++;
-        if(pointer >=queue.length){
+        if (pointer >= queue.length) {
             resizeArray();
         }
         queue[pointer] = i;
     }
 
     private void resizeArray() {
-        int [] newArray = new int[queue.length*2];
-        for (int i=0;i<queue.length;i++){
+        Object[] newArray = new Object[queue.length * 2];
+        for (int i = 0; i < queue.length; i++) {
             newArray[i] = queue[i];
         }
         queue = newArray;
     }
 
-    public int dequeue(){
-        if (pointer == -1){
-            return -1;
+    public Value dequeue() {
+        if (pointer == -1) {
+            return null;
         }
-        if (start>pointer){
-            return -1;
+        if (start > pointer) {
+            return null;
         }
-        int result = queue[start];
+        Value result = (Value) queue[start];
         start++;
-        if ((pointer-start)<queue.length/4){
+        if ((pointer - start) < queue.length / 4) {
             downsizeArray();
         }
         return result;
     }
 
+    public int size() {
+        if (isEmpty()) {
+            return 0;
+        }
+        return pointer - start + 1;
+    }
+
     private void downsizeArray() {
-        int [] newArray = new int[queue.length/2];
-        for (int i=0;i<=pointer;i++){
+        Object[] newArray = new Object[queue.length / 2];
+        for (int i = 0; i <= pointer; i++) {
             newArray[i] = queue[i];
         }
         queue = newArray;
-        start=0;
+        start = 0;
+        pointer = queue.length - 1;
     }
 
-    public boolean isEmpty(){
-        return start>pointer;
+    public boolean isEmpty() {
+        return start > pointer;
     }
-//todo 完成这个类
+
+    @Override
+    public Iterator<Value> iterator() {
+        return new MyIterator();
+    }
+
+    private class MyIterator implements Iterator<Value> {
+
+        @Override
+        public boolean hasNext() {
+            return !isEmpty();
+        }
+
+        @Override
+        public Value next() {
+            return dequeue();
+        }
+    }
 }

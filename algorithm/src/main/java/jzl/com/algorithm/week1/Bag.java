@@ -2,7 +2,7 @@ package jzl.com.algorithm.week1;
 
 import java.util.Iterator;
 
-public class Bag<Item> implements Iterable{
+public class Bag<Item> implements Iterable<Item>{
 
     private Node<Item> first = null;
     private int n= 0;

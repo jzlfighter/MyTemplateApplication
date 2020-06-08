@@ -6,11 +6,11 @@ import java.util.Iterator;
  * com.example.administrator.mytemplateapplication.network.utils
  * Created by kingj on 2020/3/27 0027.
  */
-public class MyStack implements Iterable{
+public class MyStack<Value> implements Iterable<Value>{
 
     private Node first;
 
-    public void push(int i){
+    public void push(Value i){
         if (first==null){
             first = new Node();
             first.value = i;
@@ -23,11 +23,11 @@ public class MyStack implements Iterable{
         first.next = temp;
     }
 
-    public int pop(){
+    public Value pop(){
         if (first == null){
-            return -1;
+            return null;
         }
-        int value = first.value;
+        Value value = first.value;
         if (first.next == null){
             first = null;
             return value;
@@ -49,7 +49,7 @@ public class MyStack implements Iterable{
 
         @Override
         public Object next() {
-            int item = first.value;
+            Value item = first.value;
             first  = first.next;
             return item;
         }
@@ -57,6 +57,6 @@ public class MyStack implements Iterable{
 
     private class Node{
         Node next;
-        int value;
+        Value value;
     }
 }
