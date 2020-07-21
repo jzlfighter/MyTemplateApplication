@@ -37,9 +37,9 @@ public class MyQueue<Value> implements Iterable<Value> {
         }
         Value result = (Value) queue[start];
         start++;
-        if ((pointer - start) < queue.length / 4) {
-            downsizeArray();
-        }
+//        if ((pointer - start) < queue.length / 4) {
+//            downsizeArray();
+//        }
         return result;
     }
 

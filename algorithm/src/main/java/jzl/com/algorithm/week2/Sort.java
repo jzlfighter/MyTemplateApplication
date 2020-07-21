@@ -17,22 +17,16 @@ public class Sort {
 //        arrayMap.put(new A(),3);
         System.out.println(",");
     }
-    private static class A{
-        @Override
-        public int hashCode() {
-            return 100;
-        }
-    }
 
-    public static void mergeSort(Comparable[] a) {
+    public static void mergeSort(int[] a) {
         if (a.length == 0 || a.length == 1) {
             return;
         }
-        Comparable[] aux = new Comparable[a.length];
+        int[] aux = new int[a.length];
         sort(aux, a, 0, a.length - 1);
     }
 
-    private static void sort(Comparable[] aux, Comparable[] a, int l, int h) {
+    private static void sort(int[] aux, int[] a, int l, int h) {
         if ((h - l) > 1) {
             sort(aux, a, l, l + (h - l) / 2);
             sort(aux, a, l + (h - l) / 2 + 1, h);
@@ -44,7 +38,7 @@ public class Sort {
         }
     }
 
-    private static void merge(Comparable[] aux, Comparable[] a, int l, int mid, int h) {
+    private static void merge(int[] aux, int[] a, int l, int mid, int h) {
         System.out.println(l + "." + mid + "." + h);
         for (int i = l; i <= h; i++) {
             aux[i] = a[i];
@@ -58,7 +52,6 @@ public class Sort {
                 a[curr] = aux[p1];
                 p1++;
             } else if (p1 >= mid) {
-
                 a[curr] = aux[p2];
                 p2++;
             } else if (less(aux[p2], aux[p1])) {
@@ -76,8 +69,18 @@ public class Sort {
         return v.compareTo(w) < 0;
     }
 
+    public static boolean less(int v, int w) {
+        return v < 0;
+    }
+
     public static void exch(Comparable[] a, int i1, int i2) {
         Comparable temp = a[i1];
+        a[i1] = a[i2];
+        a[i2] = temp;
+    }
+
+    public static void exch(int[] a, int i1, int i2) {
+        int temp = a[i1];
         a[i1] = a[i2];
         a[i2] = temp;
     }
