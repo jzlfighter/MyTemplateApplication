@@ -11,7 +11,7 @@ public class MergeSort {
     public static void main(String[] args) {
         String[] testArray = new String[]{"s", "c", "a", "r", "w", "z", "v", "b", "d"};
 //        new MergeSort().mergeSort(testArray);
-//        MergeSort.sort(testArray);
+        MergeSort.sort(testArray);
         System.out.println(Arrays.toString(MergeSort.indexSort(testArray)));
     }
 
